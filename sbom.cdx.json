@@ -1,0 +1,1152 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:c455725a-ff04-5dcf-85ee-473ed1a8804d",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-13T20:12:19Z",
+    "component": {
+      "type": "application",
+      "name": "L_VLLM",
+      "version": "1117140edbaf",
+      "bom-ref": "pkg:generic/anticloud/L_VLLM@1117140edbaf",
+      "purl": "pkg:generic/anticloud/L_VLLM@1117140edbaf",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "1117140edbaf3d1e1f73b01b09cde3cf98ec24ff"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": "https://github.com/vllm-project/vllm.git"
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "Torch",
+      "version": "unspecified",
+      "purl": "pkg:generic/Torch",
+      "bom-ref": "native/Torch@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "--abbrev",
+      "version": "=40",
+      "purl": "pkg:pypi/--abbrev@40",
+      "bom-ref": "pypi/--abbrev@=40"
+    },
+    {
+      "type": "library",
+      "name": "-DCMAKE_BUILD_TYPE",
+      "version": "={}",
+      "purl": "pkg:pypi/-dcmake-build-type@{}",
+      "bom-ref": "pypi/-DCMAKE_BUILD_TYPE@={}"
+    },
+    {
+      "type": "library",
+      "name": "-DVLLM_TARGET_DEVICE",
+      "version": "={}",
+      "purl": "pkg:pypi/-dvllm-target-device@{}",
+      "bom-ref": "pypi/-DVLLM_TARGET_DEVICE@={}"
+    },
+    {
+      "type": "library",
+      "name": "-DCMAKE_VERBOSE_MAKEFILE",
+      "version": "=ON",
+      "purl": "pkg:pypi/-dcmake-verbose-makefile@ON",
+      "bom-ref": "pypi/-DCMAKE_VERBOSE_MAKEFILE@=ON"
+    },
+    {
+      "type": "library",
+      "name": "-DCMAKE_C_COMPILER_LAUNCHER",
+      "version": "=sccache",
+      "purl": "pkg:pypi/-dcmake-c-compiler-launcher@sccache",
+      "bom-ref": "pypi/-DCMAKE_C_COMPILER_LAUNCHER@=sccache"
+    },
+    {
+      "type": "library",
+      "name": "-DCMAKE_CXX_COMPILER_LAUNCHER",
+      "version": "=sccache",
+      "purl": "pkg:pypi/-dcmake-cxx-compiler-launcher@sccache",
+      "bom-ref": "pypi/-DCMAKE_CXX_COMPILER_LAUNCHER@=sccache"
+    },
+    {
+      "type": "library",
+      "name": "-DCMAKE_CUDA_COMPILER_LAUNCHER",
+      "version": "=sccache",
+      "purl": "pkg:pypi/-dcmake-cuda-compiler-launcher@sccache",
+      "bom-ref": "pypi/-DCMAKE_CUDA_COMPILER_LAUNCHER@=sccache"
+    },
+    {
+      "type": "library",
+      "name": "-DCMAKE_HIP_COMPILER_LAUNCHER",
+      "version": "=sccache",
+      "purl": "pkg:pypi/-dcmake-hip-compiler-launcher@sccache",
+      "bom-ref": "pypi/-DCMAKE_HIP_COMPILER_LAUNCHER@=sccache"
+    },
+    {
+      "type": "library",
+      "name": "-DVLLM_PYTHON_EXECUTABLE",
+      "version": "={}",
+      "purl": "pkg:pypi/-dvllm-python-executable@{}",
+      "bom-ref": "pypi/-DVLLM_PYTHON_EXECUTABLE@={}"
+    },
+    {
+      "type": "library",
+      "name": "-DVLLM_PYTHON_PATH",
+      "version": "={}",
+      "purl": "pkg:pypi/-dvllm-python-path@{}",
+      "bom-ref": "pypi/-DVLLM_PYTHON_PATH@={}"
+    },
+    {
+      "type": "library",
+      "name": "-DFETCHCONTENT_BASE_DIR",
+      "version": "={}",
+      "purl": "pkg:pypi/-dfetchcontent-base-dir@{}",
+      "bom-ref": "pypi/-DFETCHCONTENT_BASE_DIR@={}"
+    },
+    {
+      "type": "library",
+      "name": "-DNVCC_THREADS",
+      "version": "={}",
+      "purl": "pkg:pypi/-dnvcc-threads@{}",
+      "bom-ref": "pypi/-DNVCC_THREADS@={}"
+    },
+    {
+      "type": "library",
+      "name": "-DCMAKE_CUDA_COMPILER",
+      "version": "={CUDA_HOME}/bin/nvcc",
+      "purl": "pkg:pypi/-dcmake-cuda-compiler@{CUDA_HOME}/bin/nvcc",
+      "bom-ref": "pypi/-DCMAKE_CUDA_COMPILER@={CUDA_HOME}/bin/nvcc"
+    },
+    {
+      "type": "library",
+      "name": "-DROCM_PATH",
+      "version": "={ROCM_HOME}",
+      "purl": "pkg:pypi/-drocm-path@{ROCM_HOME}",
+      "bom-ref": "pypi/-DROCM_PATH@={ROCM_HOME}"
+    },
+    {
+      "type": "library",
+      "name": "-j",
+      "version": "={num_jobs}",
+      "purl": "pkg:pypi/-j@{num_jobs}",
+      "bom-ref": "pypi/-j@={num_jobs}"
+    },
+    {
+      "type": "library",
+      "name": "--target",
+      "version": "={name}",
+      "purl": "pkg:pypi/--target@{name}",
+      "bom-ref": "pypi/--target@={name}"
+    },
+    {
+      "type": "library",
+      "name": "VLLM_PRECOMPILED_WHEEL_VARIANT",
+      "version": "=%s does not match the ",
+      "purl": "pkg:pypi/vllm-precompiled-wheel-variant@%s does not match the ",
+      "bom-ref": "pypi/VLLM_PRECOMPILED_WHEEL_VARIANT@=%s does not match the "
+    },
+    {
+      "type": "library",
+      "name": "torch",
+      "version": "=={expected}",
+      "purl": "pkg:pypi/torch@{expected}",
+      "bom-ref": "pypi/torch@=={expected}"
+    },
+    {
+      "type": "library",
+      "name": "-r",
+      "version": "unspecified",
+      "purl": "pkg:pypi/-r",
+      "bom-ref": "pypi/-r@unspecified"
+    },
+    {
+      "type": "library",
+      "name": "zentorch",
+      "version": "==2.13.0.1",
+      "purl": "pkg:pypi/zentorch@2.13.0.1",
+      "bom-ref": "pypi/zentorch@==2.13.0.1"
+    },
+    {
+      "type": "library",
+      "name": "tensorizer",
+      "version": "==2.10.1",
+      "purl": "pkg:pypi/tensorizer@2.10.1",
+      "bom-ref": "pypi/tensorizer@==2.10.1"
+    },
+    {
+      "type": "library",
+      "name": "fastsafetensors",
+      "version": ">= 0.3.3",
+      "purl": "pkg:pypi/fastsafetensors@0.3.3",
+      "bom-ref": "pypi/fastsafetensors@>= 0.3.3"
+    },
+    {
+      "type": "library",
+      "name": "instanttensor",
+      "version": ">= 0.1.9",
+      "purl": "pkg:pypi/instanttensor@0.1.9",
+      "bom-ref": "pypi/instanttensor@>= 0.1.9"
+    },
+    {
+      "type": "library",
+      "name": "nvidia-deepstream-videodecode-cu13",
+      "version": ">=9.0.2",
+      "purl": "pkg:pypi/nvidia-deepstream-videodecode-cu13@9.0.2",
+      "bom-ref": "pypi/nvidia-deepstream-videodecode-cu13@>=9.0.2"
+    },
+    {
+      "type": "library",
+      "name": "b12x",
+      "version": "==1.3.0",
+      "purl": "pkg:pypi/b12x@1.3.0",
+      "bom-ref": "pypi/b12x@==1.3.0"
+    },
+    {
+      "type": "library",
+      "name": "helion",
+      "version": "==1.4.0",
+      "purl": "pkg:pypi/helion@1.4.0",
+      "bom-ref": "pypi/helion@==1.4.0"
+    },
+    {
+      "type": "library",
+      "name": "opentelemetry-sdk",
+      "version": ">=1.26.0",
+      "purl": "pkg:pypi/opentelemetry-sdk@1.26.0",
+      "bom-ref": "pypi/opentelemetry-sdk@>=1.26.0"
+    },
+    {
+      "type": "library",
+      "name": "opentelemetry-api",
+      "version": ">=1.26.0",
+      "purl": "pkg:pypi/opentelemetry-api@1.26.0",
+      "bom-ref": "pypi/opentelemetry-api@>=1.26.0"
+    },
+    {
+      "type": "library",
+      "name": "opentelemetry-exporter-otlp",
+      "version": ">=1.26.0",
+      "purl": "pkg:pypi/opentelemetry-exporter-otlp@1.26.0",
+      "bom-ref": "pypi/opentelemetry-exporter-otlp@>=1.26.0"
+    },
+    {
+      "type": "library",
+      "name": "opentelemetry-semantic-conventions-ai",
+      "version": ">=0.4.1",
+      "purl": "pkg:pypi/opentelemetry-semantic-conventions-ai@0.4.1",
+      "bom-ref": "pypi/opentelemetry-semantic-conventions-ai@>=0.4.1"
+    },
+    {
+      "type": "library",
+      "name": "vllm-gguf-plugin",
+      "version": ">=0.0.2",
+      "purl": "pkg:pypi/vllm-gguf-plugin@0.0.2",
+      "bom-ref": "pypi/vllm-gguf-plugin@>=0.0.2"
+    },
+    {
+      "type": "library",
+      "name": "dummy_stat_logger",
+      "version": "= dummy_stat_logger.dummy_stat_logger:DummyStatLogger",
+      "purl": "pkg:pypi/dummy-stat-logger@dummy_stat_logger.dummy_stat_logger:DummyStatLogger",
+      "bom-ref": "pypi/dummy_stat_logger@= dummy_stat_logger.dummy_stat_logger:DummyStatLogger"
+    },
+    {
+      "type": "library",
+      "name": "dummy_platform_plugin",
+      "version": "= vllm_add_dummy_platform:dummy_platform_plugin",
+      "purl": "pkg:pypi/dummy-platform-plugin@vllm_add_dummy_platform:dummy_platform_plugin",
+      "bom-ref": "pypi/dummy_platform_plugin@= vllm_add_dummy_platform:dummy_platform_plugin"
+    },
+    {
+      "type": "library",
+      "name": "dummy_custom_ops",
+      "version": "= vllm_add_dummy_platform:register_ops",
+      "purl": "pkg:pypi/dummy-custom-ops@vllm_add_dummy_platform:register_ops",
+      "bom-ref": "pypi/dummy_custom_ops@= vllm_add_dummy_platform:register_ops"
+    },
+    {
+      "type": "library",
+      "name": "register_dummy_model",
+      "version": "= vllm_add_dummy_model:register",
+      "purl": "pkg:pypi/register-dummy-model@vllm_add_dummy_model:register",
+      "bom-ref": "pypi/register_dummy_model@= vllm_add_dummy_model:register"
+    },
+    {
+      "type": "library",
+      "name": "dummy_admin_endpoint_plugin",
+      "version": "= vllm_add_dummy_endpoint_plugin:DummyAdminEndpointPlugin",
+      "purl": "pkg:pypi/dummy-admin-endpoint-plugin@vllm_add_dummy_endpoint_plugin:DummyAdminEndpointPlugin",
+      "bom-ref": "pypi/dummy_admin_endpoint_plugin@= vllm_add_dummy_endpoint_plugin:DummyAdminEndpointPlugin"
+    },
+    {
+      "type": "library",
+      "name": "prithvi_to_tiff",
+      "version": "= prithvi_io_processor:register_prithvi",
+      "purl": "pkg:pypi/prithvi-to-tiff@prithvi_io_processor:register_prithvi",
+      "bom-ref": "pypi/prithvi_to_tiff@= prithvi_io_processor:register_prithvi"
+    },
+    {
+      "type": "library",
+      "name": "colbert_query_plugin",
+      "version": "= colbert_query_processor:register_colbert_query_embedding_processor",
+      "purl": "pkg:pypi/colbert-query-plugin@colbert_query_processor:register_colbert_query_embedding_processor",
+      "bom-ref": "pypi/colbert_query_plugin@= colbert_query_processor:register_colbert_query_embedding_processor"
+    },
+    {
+      "type": "library",
+      "name": "bge_m3_sparse_plugin",
+      "version": "= bge_m3_sparse_processor:register_bge_m3_sparse_embeddings_processor",
+      "purl": "pkg:pypi/bge-m3-sparse-plugin@bge_m3_sparse_processor:register_bge_m3_sparse_embeddings_processor",
+      "bom-ref": "pypi/bge_m3_sparse_plugin@= bge_m3_sparse_processor:register_bge_m3_sparse_embeddings_processor"
+    },
+    {
+      "type": "library",
+      "name": "resolver",
+      "version": "3",
+      "purl": "pkg:cargo/resolver@3",
+      "bom-ref": "cargo/resolver@3"
+    },
+    {
+      "type": "library",
+      "name": "version",
+      "version": "0.1.0",
+      "purl": "pkg:cargo/version@0.1.0",
+      "bom-ref": "cargo/version@0.1.0"
+    },
+    {
+      "type": "library",
+      "name": "edition",
+      "version": "2024",
+      "purl": "pkg:cargo/edition@2024",
+      "bom-ref": "cargo/edition@2024"
+    },
+    {
+      "type": "library",
+      "name": "license",
+      "version": "Apache-2.0",
+      "purl": "pkg:cargo/license@Apache-2.0",
+      "bom-ref": "cargo/license@Apache-2.0"
+    },
+    {
+      "type": "library",
+      "name": "anyhow",
+      "version": "1.0.100",
+      "purl": "pkg:cargo/anyhow@1.0.100",
+      "bom-ref": "cargo/anyhow@1.0.100"
+    },
+    {
+      "type": "library",
+      "name": "arc-swap",
+      "version": "1.9.0",
+      "purl": "pkg:cargo/arc-swap@1.9.0",
+      "bom-ref": "cargo/arc-swap@1.9.0"
+    },
+    {
+      "type": "library",
+      "name": "async-openai",
+      "version": "0.33.1",
+      "purl": "pkg:cargo/async-openai@0.33.1",
+      "bom-ref": "cargo/async-openai@0.33.1"
+    },
+    {
+      "type": "library",
+      "name": "async-trait",
+      "version": "0.1.89",
+      "purl": "pkg:cargo/async-trait@0.1.89",
+      "bom-ref": "cargo/async-trait@0.1.89"
+    },
+    {
+      "type": "library",
+      "name": "asynk-strim-attr",
+      "version": "0.1.0",
+      "purl": "pkg:cargo/asynk-strim-attr@0.1.0",
+      "bom-ref": "cargo/asynk-strim-attr@0.1.0"
+    },
+    {
+      "type": "library",
+      "name": "auto_enums",
+      "version": "0.8.9",
+      "purl": "pkg:cargo/auto_enums@0.8.9",
+      "bom-ref": "cargo/auto_enums@0.8.9"
+    },
+    {
+      "type": "library",
+      "name": "axum",
+      "version": "0.8.8",
+      "purl": "pkg:cargo/axum@0.8.8",
+      "bom-ref": "cargo/axum@0.8.8"
+    },
+    {
+      "type": "library",
+      "name": "base64",
+      "version": "0.22.1",
+      "purl": "pkg:cargo/base64@0.22.1",
+      "bom-ref": "cargo/base64@0.22.1"
+    },
+    {
+      "type": "library",
+      "name": "bytemuck",
+      "version": "1.25.0",
+      "purl": "pkg:cargo/bytemuck@1.25.0",
+      "bom-ref": "cargo/bytemuck@1.25.0"
+    },
+    {
+      "type": "library",
+      "name": "byteorder",
+      "version": "1.5.0",
+      "purl": "pkg:cargo/byteorder@1.5.0",
+      "bom-ref": "cargo/byteorder@1.5.0"
+    },
+    {
+      "type": "library",
+      "name": "bytes",
+      "version": "1.12.0",
+      "purl": "pkg:cargo/bytes@1.12.0",
+      "bom-ref": "cargo/bytes@1.12.0"
+    },
+    {
+      "type": "library",
+      "name": "chrono",
+      "version": "0.4.42",
+      "purl": "pkg:cargo/chrono@0.4.42",
+      "bom-ref": "cargo/chrono@0.4.42"
+    },
+    {
+      "type": "library",
+      "name": "clap",
+      "version": "4.5.38",
+      "purl": "pkg:cargo/clap@4.5.38",
+      "bom-ref": "cargo/clap@4.5.38"
+    },
+    {
+      "type": "library",
+      "name": "criterion",
+      "version": "0.5.1",
+      "purl": "pkg:cargo/criterion@0.5.1",
+      "bom-ref": "cargo/criterion@0.5.1"
+    },
+    {
+      "type": "library",
+      "name": "dirs",
+      "version": "6.0.0",
+      "purl": "pkg:cargo/dirs@6.0.0",
+      "bom-ref": "cargo/dirs@6.0.0"
+    },
+    {
+      "type": "library",
+      "name": "easy-ext",
+      "version": "1.0.3",
+      "purl": "pkg:cargo/easy-ext@1.0.3",
+      "bom-ref": "cargo/easy-ext@1.0.3"
+    },
+    {
+      "type": "library",
+      "name": "educe",
+      "version": "0.6.0",
+      "purl": "pkg:cargo/educe@0.6.0",
+      "bom-ref": "cargo/educe@0.6.0"
+    },
+    {
+      "type": "library",
+      "name": "enum-as-inner",
+      "version": "0.7.0",
+      "purl": "pkg:cargo/enum-as-inner@0.7.0",
+      "bom-ref": "cargo/enum-as-inner@0.7.0"
+    },
+    {
+      "type": "library",
+      "name": "expect-test",
+      "version": "1.5.1",
+      "purl": "pkg:cargo/expect-test@1.5.1",
+      "bom-ref": "cargo/expect-test@1.5.1"
+    },
+    {
+      "type": "library",
+      "name": "fastokens",
+      "version": "0.2.1",
+      "purl": "pkg:cargo/fastokens@0.2.1",
+      "bom-ref": "cargo/fastokens@0.2.1"
+    },
+    {
+      "type": "library",
+      "name": "futures",
+      "version": "0.3.31",
+      "purl": "pkg:cargo/futures@0.3.31",
+      "bom-ref": "cargo/futures@0.3.31"
+    },
+    {
+      "type": "library",
+      "name": "half",
+      "version": "2.7.1",
+      "purl": "pkg:cargo/half@2.7.1",
+      "bom-ref": "cargo/half@2.7.1"
+    },
+    {
+      "type": "library",
+      "name": "hex",
+      "version": "0.4.3",
+      "purl": "pkg:cargo/hex@0.4.3",
+      "bom-ref": "cargo/hex@0.4.3"
+    },
+    {
+      "type": "library",
+      "name": "hf-hub",
+      "version": "0.5.0",
+      "purl": "pkg:cargo/hf-hub@0.5.0",
+      "bom-ref": "cargo/hf-hub@0.5.0"
+    },
+    {
+      "type": "library",
+      "name": "http-body",
+      "version": "1.0.1",
+      "purl": "pkg:cargo/http-body@1.0.1",
+      "bom-ref": "cargo/http-body@1.0.1"
+    },
+    {
+      "type": "library",
+      "name": "hyper",
+      "version": "1.10.1",
+      "purl": "pkg:cargo/hyper@1.10.1",
+      "bom-ref": "cargo/hyper@1.10.1"
+    },
+    {
+      "type": "library",
+      "name": "hyper-util",
+      "version": "0.1.20",
+      "purl": "pkg:cargo/hyper-util@0.1.20",
+      "bom-ref": "cargo/hyper-util@0.1.20"
+    },
+    {
+      "type": "library",
+      "name": "image",
+      "version": "0.25.9",
+      "purl": "pkg:cargo/image@0.25.9",
+      "bom-ref": "cargo/image@0.25.9"
+    },
+    {
+      "type": "library",
+      "name": "indexmap",
+      "version": "2.13.0",
+      "purl": "pkg:cargo/indexmap@2.13.0",
+      "bom-ref": "cargo/indexmap@2.13.0"
+    },
+    {
+      "type": "library",
+      "name": "indicatif",
+      "version": "0.18.4",
+      "purl": "pkg:cargo/indicatif@0.18.4",
+      "bom-ref": "cargo/indicatif@0.18.4"
+    },
+    {
+      "type": "library",
+      "name": "itertools",
+      "version": "0.14.0",
+      "purl": "pkg:cargo/itertools@0.14.0",
+      "bom-ref": "cargo/itertools@0.14.0"
+    },
+    {
+      "type": "library",
+      "name": "libc",
+      "version": "0.2.177",
+      "purl": "pkg:cargo/libc@0.2.177",
+      "bom-ref": "cargo/libc@0.2.177"
+    },
+    {
+      "type": "library",
+      "name": "mimalloc",
+      "version": "0.1.52",
+      "purl": "pkg:cargo/mimalloc@0.1.52",
+      "bom-ref": "cargo/mimalloc@0.1.52"
+    },
+    {
+      "type": "library",
+      "name": "minijinja",
+      "version": "2.24",
+      "purl": "pkg:cargo/minijinja@2.24",
+      "bom-ref": "cargo/minijinja@2.24"
+    },
+    {
+      "type": "library",
+      "name": "minijinja-contrib",
+      "version": "2.24",
+      "purl": "pkg:cargo/minijinja-contrib@2.24",
+      "bom-ref": "cargo/minijinja-contrib@2.24"
+    },
+    {
+      "type": "library",
+      "name": "native-tls-vendored",
+      "version": "0.2.18",
+      "purl": "pkg:cargo/native-tls-vendored@0.2.18",
+      "bom-ref": "cargo/native-tls-vendored@0.2.18"
+    },
+    {
+      "type": "library",
+      "name": "ndarray",
+      "version": "0.17",
+      "purl": "pkg:cargo/ndarray@0.17",
+      "bom-ref": "cargo/ndarray@0.17"
+    },
+    {
+      "type": "library",
+      "name": "openai-protocol",
+      "version": "1.6.0",
+      "purl": "pkg:cargo/openai-protocol@1.6.0",
+      "bom-ref": "cargo/openai-protocol@1.6.0"
+    },
+    {
+      "type": "library",
+      "name": "openssl",
+      "version": "0.10",
+      "purl": "pkg:cargo/openssl@0.10",
+      "bom-ref": "cargo/openssl@0.10"
+    },
+    {
+      "type": "library",
+      "name": "parking_lot",
+      "version": "0.12.5",
+      "purl": "pkg:cargo/parking_lot@0.12.5",
+      "bom-ref": "cargo/parking_lot@0.12.5"
+    },
+    {
+      "type": "library",
+      "name": "parquet",
+      "version": "59.2.0",
+      "purl": "pkg:cargo/parquet@59.2.0",
+      "bom-ref": "cargo/parquet@59.2.0"
+    },
+    {
+      "type": "library",
+      "name": "paste",
+      "version": "1.0.15",
+      "purl": "pkg:cargo/paste@1.0.15",
+      "bom-ref": "cargo/paste@1.0.15"
+    },
+    {
+      "type": "library",
+      "name": "prometheus-client",
+      "version": "0.24.0",
+      "purl": "pkg:cargo/prometheus-client@0.24.0",
+      "bom-ref": "cargo/prometheus-client@0.24.0"
+    },
+    {
+      "type": "library",
+      "name": "prometheus-client-derive-encode",
+      "version": "0.5.0",
+      "purl": "pkg:cargo/prometheus-client-derive-encode@0.5.0",
+      "bom-ref": "cargo/prometheus-client-derive-encode@0.5.0"
+    },
+    {
+      "type": "library",
+      "name": "prost",
+      "version": "0.14.3",
+      "purl": "pkg:cargo/prost@0.14.3",
+      "bom-ref": "cargo/prost@0.14.3"
+    },
+    {
+      "type": "library",
+      "name": "prost-types",
+      "version": "0.14.3",
+      "purl": "pkg:cargo/prost-types@0.14.3",
+      "bom-ref": "cargo/prost-types@0.14.3"
+    },
+    {
+      "type": "library",
+      "name": "protox",
+      "version": "0.9.1",
+      "purl": "pkg:cargo/protox@0.9.1",
+      "bom-ref": "cargo/protox@0.9.1"
+    },
+    {
+      "type": "library",
+      "name": "pyo3",
+      "version": "0.28.3",
+      "purl": "pkg:cargo/pyo3@0.28.3",
+      "bom-ref": "cargo/pyo3@0.28.3"
+    },
+    {
+      "type": "library",
+      "name": "pythonize",
+      "version": "0.28.0",
+      "purl": "pkg:cargo/pythonize@0.28.0",
+      "bom-ref": "cargo/pythonize@0.28.0"
+    },
+    {
+      "type": "library",
+      "name": "rand",
+      "version": "0.9.2",
+      "purl": "pkg:cargo/rand@0.9.2",
+      "bom-ref": "cargo/rand@0.9.2"
+    },
+    {
+      "type": "library",
+      "name": "rand_distr",
+      "version": "0.5.1",
+      "purl": "pkg:cargo/rand_distr@0.5.1",
+      "bom-ref": "cargo/rand_distr@0.5.1"
+    },
+    {
+      "type": "library",
+      "name": "rayon",
+      "version": "1.11.0",
+      "purl": "pkg:cargo/rayon@1.11.0",
+      "bom-ref": "cargo/rayon@1.11.0"
+    },
+    {
+      "type": "library",
+      "name": "reasoning-parser",
+      "version": "1.2.2",
+      "purl": "pkg:cargo/reasoning-parser@1.2.2",
+      "bom-ref": "cargo/reasoning-parser@1.2.2"
+    },
+    {
+      "type": "library",
+      "name": "reqwest",
+      "version": "0.12.8",
+      "purl": "pkg:cargo/reqwest@0.12.8",
+      "bom-ref": "cargo/reqwest@0.12.8"
+    },
+    {
+      "type": "library",
+      "name": "reqwest-0-13",
+      "version": "0.13.4",
+      "purl": "pkg:cargo/reqwest-0-13@0.13.4",
+      "bom-ref": "cargo/reqwest-0-13@0.13.4"
+    },
+    {
+      "type": "library",
+      "name": "riptoken",
+      "version": "0.3.0",
+      "purl": "pkg:cargo/riptoken@0.3.0",
+      "bom-ref": "cargo/riptoken@0.3.0"
+    },
+    {
+      "type": "library",
+      "name": "rlimit",
+      "version": "0.11.0",
+      "purl": "pkg:cargo/rlimit@0.11.0",
+      "bom-ref": "cargo/rlimit@0.11.0"
+    },
+    {
+      "type": "library",
+      "name": "rmp-serde",
+      "version": "1.3.1",
+      "purl": "pkg:cargo/rmp-serde@1.3.1",
+      "bom-ref": "cargo/rmp-serde@1.3.1"
+    },
+    {
+      "type": "library",
+      "name": "rmpv",
+      "version": "1.3.1",
+      "purl": "pkg:cargo/rmpv@1.3.1",
+      "bom-ref": "cargo/rmpv@1.3.1"
+    },
+    {
+      "type": "library",
+      "name": "rustc-hash",
+      "version": "1.1.0",
+      "purl": "pkg:cargo/rustc-hash@1.1.0",
+      "bom-ref": "cargo/rustc-hash@1.1.0"
+    },
+    {
+      "type": "library",
+      "name": "serde",
+      "version": "1.0.228",
+      "purl": "pkg:cargo/serde@1.0.228",
+      "bom-ref": "cargo/serde@1.0.228"
+    },
+    {
+      "type": "library",
+      "name": "serde-json-fmt",
+      "version": "0.1.0",
+      "purl": "pkg:cargo/serde-json-fmt@0.1.0",
+      "bom-ref": "cargo/serde-json-fmt@0.1.0"
+    },
+    {
+      "type": "library",
+      "name": "serde_default",
+      "version": "0.2.0",
+      "purl": "pkg:cargo/serde_default@0.2.0",
+      "bom-ref": "cargo/serde_default@0.2.0"
+    },
+    {
+      "type": "library",
+      "name": "serde_json",
+      "version": "1.0.145",
+      "purl": "pkg:cargo/serde_json@1.0.145",
+      "bom-ref": "cargo/serde_json@1.0.145"
+    },
+    {
+      "type": "library",
+      "name": "serde_repr",
+      "version": "0.1.20",
+      "purl": "pkg:cargo/serde_repr@0.1.20",
+      "bom-ref": "cargo/serde_repr@0.1.20"
+    },
+    {
+      "type": "library",
+      "name": "serde_tuple",
+      "version": "1.1.3",
+      "purl": "pkg:cargo/serde_tuple@1.1.3",
+      "bom-ref": "cargo/serde_tuple@1.1.3"
+    },
+    {
+      "type": "library",
+      "name": "serde_with",
+      "version": "3.18.0",
+      "purl": "pkg:cargo/serde_with@3.18.0",
+      "bom-ref": "cargo/serde_with@3.18.0"
+    },
+    {
+      "type": "library",
+      "name": "serial_test",
+      "version": "3.2.0",
+      "purl": "pkg:cargo/serial_test@3.2.0",
+      "bom-ref": "cargo/serial_test@3.2.0"
+    },
+    {
+      "type": "library",
+      "name": "sha2",
+      "version": "0.10.9",
+      "purl": "pkg:cargo/sha2@0.10.9",
+      "bom-ref": "cargo/sha2@0.10.9"
+    },
+    {
+      "type": "library",
+      "name": "smallvec",
+      "version": "1.15.1",
+      "purl": "pkg:cargo/smallvec@1.15.1",
+      "bom-ref": "cargo/smallvec@1.15.1"
+    },
+    {
+      "type": "library",
+      "name": "socket2",
+      "version": "0.6.3",
+      "purl": "pkg:cargo/socket2@0.6.3",
+      "bom-ref": "cargo/socket2@0.6.3"
+    },
+    {
+      "type": "library",
+      "name": "strum",
+      "version": "0.27.2",
+      "purl": "pkg:cargo/strum@0.27.2",
+      "bom-ref": "cargo/strum@0.27.2"
+    },
+    {
+      "type": "library",
+      "name": "subenum",
+      "version": "1.1.3",
+      "purl": "pkg:cargo/subenum@1.1.3",
+      "bom-ref": "cargo/subenum@1.1.3"
+    },
+    {
+      "type": "library",
+      "name": "subtle",
+      "version": "2.6",
+      "purl": "pkg:cargo/subtle@2.6",
+      "bom-ref": "cargo/subtle@2.6"
+    },
+    {
+      "type": "library",
+      "name": "task-local",
+      "version": "0.1.1",
+      "purl": "pkg:cargo/task-local@0.1.1",
+      "bom-ref": "cargo/task-local@0.1.1"
+    },
+    {
+      "type": "library",
+      "name": "tekken",
+      "version": "0.2.0",
+      "purl": "pkg:cargo/tekken@0.2.0",
+      "bom-ref": "cargo/tekken@0.2.0"
+    },
+    {
+      "type": "library",
+      "name": "tempfile",
+      "version": "3.23.0",
+      "purl": "pkg:cargo/tempfile@3.23.0",
+      "bom-ref": "cargo/tempfile@3.23.0"
+    },
+    {
+      "type": "library",
+      "name": "thiserror",
+      "version": "2.0.16",
+      "purl": "pkg:cargo/thiserror@2.0.16",
+      "bom-ref": "cargo/thiserror@2.0.16"
+    },
+    {
+      "type": "library",
+      "name": "thiserror-ext",
+      "version": "0.3.0",
+      "purl": "pkg:cargo/thiserror-ext@0.3.0",
+      "bom-ref": "cargo/thiserror-ext@0.3.0"
+    },
+    {
+      "type": "library",
+      "name": "tiktoken-rs",
+      "version": "0.9.1",
+      "purl": "pkg:cargo/tiktoken-rs@0.9.1",
+      "bom-ref": "cargo/tiktoken-rs@0.9.1"
+    },
+    {
+      "type": "library",
+      "name": "time",
+      "version": "0.3.47",
+      "purl": "pkg:cargo/time@0.3.47",
+      "bom-ref": "cargo/time@0.3.47"
+    },
+    {
+      "type": "library",
+      "name": "tls-listener",
+      "version": "0.11.2",
+      "purl": "pkg:cargo/tls-listener@0.11.2",
+      "bom-ref": "cargo/tls-listener@0.11.2"
+    },
+    {
+      "type": "library",
+      "name": "tokenizers",
+      "version": "0.22.0",
+      "purl": "pkg:cargo/tokenizers@0.22.0",
+      "bom-ref": "cargo/tokenizers@0.22.0"
+    },
+    {
+      "type": "library",
+      "name": "tokio",
+      "version": "1.47.1",
+      "purl": "pkg:cargo/tokio@1.47.1",
+      "bom-ref": "cargo/tokio@1.47.1"
+    },
+    {
+      "type": "library",
+      "name": "tokio-openssl",
+      "version": "0.6",
+      "purl": "pkg:cargo/tokio-openssl@0.6",
+      "bom-ref": "cargo/tokio-openssl@0.6"
+    },
+    {
+      "type": "library",
+      "name": "tokio-stream",
+      "version": "0.1",
+      "purl": "pkg:cargo/tokio-stream@0.1",
+      "bom-ref": "cargo/tokio-stream@0.1"
+    },
+    {
+      "type": "library",
+      "name": "tokio-util",
+      "version": "0.7.18",
+      "purl": "pkg:cargo/tokio-util@0.7.18",
+      "bom-ref": "cargo/tokio-util@0.7.18"
+    },
+    {
+      "type": "library",
+      "name": "tonic",
+      "version": "0.14.6",
+      "purl": "pkg:cargo/tonic@0.14.6",
+      "bom-ref": "cargo/tonic@0.14.6"
+    },
+    {
+      "type": "library",
+      "name": "tonic-build",
+      "version": "0.14.6",
+      "purl": "pkg:cargo/tonic-build@0.14.6",
+      "bom-ref": "cargo/tonic-build@0.14.6"
+    },
+    {
+      "type": "library",
+      "name": "tonic-health",
+      "version": "0.14.6",
+      "purl": "pkg:cargo/tonic-health@0.14.6",
+      "bom-ref": "cargo/tonic-health@0.14.6"
+    },
+    {
+      "type": "library",
+      "name": "tonic-prost",
+      "version": "0.14.6",
+      "purl": "pkg:cargo/tonic-prost@0.14.6",
+      "bom-ref": "cargo/tonic-prost@0.14.6"
+    },
+    {
+      "type": "library",
+      "name": "tonic-prost-build",
+      "version": "0.14.6",
+      "purl": "pkg:cargo/tonic-prost-build@0.14.6",
+      "bom-ref": "cargo/tonic-prost-build@0.14.6"
+    },
+    {
+      "type": "library",
+      "name": "tool-parser",
+      "version": "1.2.0",
+      "purl": "pkg:cargo/tool-parser@1.2.0",
+      "bom-ref": "cargo/tool-parser@1.2.0"
+    },
+    {
+      "type": "library",
+      "name": "tower",
+      "version": "0.5.3",
+      "purl": "pkg:cargo/tower@0.5.3",
+      "bom-ref": "cargo/tower@0.5.3"
+    },
+    {
+      "type": "library",
+      "name": "tower-http",
+      "version": "0.6.8",
+      "purl": "pkg:cargo/tower-http@0.6.8",
+      "bom-ref": "cargo/tower-http@0.6.8"
+    },
+    {
+      "type": "library",
+      "name": "tracing",
+      "version": "0.1.44",
+      "purl": "pkg:cargo/tracing@0.1.44",
+      "bom-ref": "cargo/tracing@0.1.44"
+    },
+    {
+      "type": "library",
+      "name": "tracing-futures",
+      "version": "0.2.5",
+      "purl": "pkg:cargo/tracing-futures@0.2.5",
+      "bom-ref": "cargo/tracing-futures@0.2.5"
+    },
+    {
+      "type": "library",
+      "name": "tracing-subscriber",
+      "version": "0.3.20",
+      "purl": "pkg:cargo/tracing-subscriber@0.3.20",
+      "bom-ref": "cargo/tracing-subscriber@0.3.20"
+    },
+    {
+      "type": "library",
+      "name": "trait-set",
+      "version": "0.3.0",
+      "purl": "pkg:cargo/trait-set@0.3.0",
+      "bom-ref": "cargo/trait-set@0.3.0"
+    },
+    {
+      "type": "library",
+      "name": "url",
+      "version": "2.5.7",
+      "purl": "pkg:cargo/url@2.5.7",
+      "bom-ref": "cargo/url@2.5.7"
+    },
+    {
+      "type": "library",
+      "name": "uuid",
+      "version": "1.22.0",
+      "purl": "pkg:cargo/uuid@1.22.0",
+      "bom-ref": "cargo/uuid@1.22.0"
+    },
+    {
+      "type": "library",
+      "name": "validator",
+      "version": "0.20.0",
+      "purl": "pkg:cargo/validator@0.20.0",
+      "bom-ref": "cargo/validator@0.20.0"
+    },
+    {
+      "type": "library",
+      "name": "winnow",
+      "version": "1.0.2",
+      "purl": "pkg:cargo/winnow@1.0.2",
+      "bom-ref": "cargo/winnow@1.0.2"
+    },
+    {
+      "type": "library",
+      "name": "xgrammar-structural-tag",
+      "version": "0.4.1",
+      "purl": "pkg:cargo/xgrammar-structural-tag@0.4.1",
+      "bom-ref": "cargo/xgrammar-structural-tag@0.4.1"
+    },
+    {
+      "type": "library",
+      "name": "zeromq",
+      "version": "0.6.0",
+      "purl": "pkg:cargo/zeromq@0.6.0",
+      "bom-ref": "cargo/zeromq@0.6.0"
+    },
+    {
+      "type": "library",
+      "name": "too_many_arguments",
+      "version": "allow",
+      "purl": "pkg:cargo/too_many_arguments@allow",
+      "bom-ref": "cargo/too_many_arguments@allow"
+    },
+    {
+      "type": "library",
+      "name": "panic",
+      "version": "abort",
+      "purl": "pkg:cargo/panic@abort",
+      "bom-ref": "cargo/panic@abort"
+    },
+    {
+      "type": "library",
+      "name": "lto",
+      "version": "thin",
+      "purl": "pkg:cargo/lto@thin",
+      "bom-ref": "cargo/lto@thin"
+    },
+    {
+      "type": "library",
+      "name": "name",
+      "version": "vllm-tracing",
+      "purl": "pkg:cargo/name@vllm-tracing",
+      "bom-ref": "cargo/name@vllm-tracing"
+    },
+    {
+      "type": "library",
+      "name": "description",
+      "version": "Shared tracing subscriber and log formatting for vLLM Rust binaries",
+      "purl": "pkg:cargo/description@Shared tracing subscriber and log formatting for vLLM Rust binaries",
+      "bom-ref": "cargo/description@Shared tracing subscriber and log formatting for vLLM Rust binaries"
+    },
+    {
+      "type": "library",
+      "name": "path",
+      "version": "src/main.rs",
+      "purl": "pkg:cargo/path@src/main.rs",
+      "bom-ref": "cargo/path@src/main.rs"
+    },
+    {
+      "type": "library",
+      "name": "repository",
+      "version": "https://github.com/vllm-project/vllm",
+      "purl": "pkg:cargo/repository@https://github.com/vllm-project/vllm",
+      "bom-ref": "cargo/repository@https://github.com/vllm-project/vllm"
+    },
+    {
+      "type": "library",
+      "name": "readme",
+      "version": "README.md",
+      "purl": "pkg:cargo/readme@README.md",
+      "bom-ref": "cargo/readme@README.md"
+    },
+    {
+      "type": "library",
+      "name": "openai",
+      "version": "==1.78.1",
+      "purl": "pkg:pypi/openai@1.78.1",
+      "bom-ref": "pypi/openai@==1.78.1"
+    },
+    {
+      "type": "library",
+      "name": "pydantic",
+      "version": "==2.11.4",
+      "purl": "pkg:pypi/pydantic@2.11.4",
+      "bom-ref": "pypi/pydantic@==2.11.4"
+    }
+  ]
+}
